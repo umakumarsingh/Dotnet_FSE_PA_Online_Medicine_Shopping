@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineMedicineShopping.DataLayer\OnlineMedicineShopping.DataLayer.csproj" />
+    <ProjectReference Include="..\OnlineMedicineShopping.Entities\OnlineMedicineShopping.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

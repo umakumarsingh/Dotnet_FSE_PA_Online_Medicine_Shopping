@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "OnlineMedicineShopping.Entities/1.0.0": {
+        "dependencies": {
+          "MongoDB.Bson": "2.11.2"
+        },
+        "runtime": {
+          "OnlineMedicineShopping.Entities.dll": {}
+        }
+      },
+      "MongoDB.Bson/2.11.2": {
+        "runtime": {
+          "lib/netstandard2.0/MongoDB.Bson.dll": {
+            "assemblyVersion": "2.11.2.0",
+            "fileVersion": "2.11.2.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OnlineMedicineShopping.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MongoDB.Bson/2.11.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7vJoaUKPPnW6Ej0r4UHV8DeYD0/SKk/73WlDfc5JMRJRjTj3jRUtGIXwpaFYq3wT8MRHmLwbM/KvkEAb7deHRw==",
+      "path": "mongodb.bson/2.11.2",
+      "hashPath": "mongodb.bson.2.11.2.nupkg.sha512"
+    }
+  }
+}

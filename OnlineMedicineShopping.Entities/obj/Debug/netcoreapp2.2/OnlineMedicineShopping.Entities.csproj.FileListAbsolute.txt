@@ -1,0 +1,9 @@
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.Entities\bin\Debug\netcoreapp2.2\OnlineMedicineShopping.Entities.deps.json
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.Entities\bin\Debug\netcoreapp2.2\OnlineMedicineShopping.Entities.dll
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.Entities\obj\Debug\netcoreapp2.2\OnlineMedicineShopping.Entities.AssemblyInfoInputs.cache
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.Entities\obj\Debug\netcoreapp2.2\OnlineMedicineShopping.Entities.AssemblyInfo.cs
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.Entities\bin\Debug\netcoreapp2.2\OnlineMedicineShopping.Entities.pdb
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.Entities\obj\Debug\netcoreapp2.2\OnlineMedicineShopping.Entities.csprojAssemblyReference.cache
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.Entities\obj\Debug\netcoreapp2.2\OnlineMedicineShopping.Entities.csproj.CoreCompileInputs.cache
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.Entities\obj\Debug\netcoreapp2.2\OnlineMedicineShopping.Entities.dll
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.Entities\obj\Debug\netcoreapp2.2\OnlineMedicineShopping.Entities.pdb

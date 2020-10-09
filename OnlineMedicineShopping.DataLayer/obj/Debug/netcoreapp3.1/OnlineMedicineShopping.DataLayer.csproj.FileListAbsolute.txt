@@ -1,0 +1,5 @@
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\bin\Debug\netcoreapp3.1\OnlineMedicineShopping.DataLayer.deps.json
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\bin\Debug\netcoreapp3.1\OnlineMedicineShopping.DataLayer.dll
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\obj\Debug\netcoreapp3.1\OnlineMedicineShopping.DataLayer.csprojAssemblyReference.cache
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\obj\Debug\netcoreapp3.1\OnlineMedicineShopping.DataLayer.AssemblyInfoInputs.cache
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\obj\Debug\netcoreapp3.1\OnlineMedicineShopping.DataLayer.AssemblyInfo.cs

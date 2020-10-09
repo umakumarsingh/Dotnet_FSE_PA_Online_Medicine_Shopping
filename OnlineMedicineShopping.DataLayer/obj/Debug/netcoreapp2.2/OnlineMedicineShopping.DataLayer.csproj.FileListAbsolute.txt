@@ -1,0 +1,12 @@
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\bin\Debug\netcoreapp2.2\OnlineMedicineShopping.DataLayer.deps.json
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\bin\Debug\netcoreapp2.2\OnlineMedicineShopping.DataLayer.dll
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\obj\Debug\netcoreapp2.2\OnlineMedicineShopping.DataLayer.csprojAssemblyReference.cache
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\obj\Debug\netcoreapp2.2\OnlineMedicineShopping.DataLayer.AssemblyInfoInputs.cache
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\obj\Debug\netcoreapp2.2\OnlineMedicineShopping.DataLayer.AssemblyInfo.cs
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\bin\Debug\netcoreapp2.2\OnlineMedicineShopping.DataLayer.pdb
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\obj\Debug\netcoreapp2.2\OnlineMedicineShopping.DataLayer.csproj.CoreCompileInputs.cache
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\obj\Debug\netcoreapp2.2\OnlineMedicineShopping.DataLayer.dll
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\obj\Debug\netcoreapp2.2\OnlineMedicineShopping.DataLayer.pdb
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\bin\Debug\netcoreapp2.2\OnlineMedicineShopping.Entities.dll
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\bin\Debug\netcoreapp2.2\OnlineMedicineShopping.Entities.pdb
+D:\IIHT\Task-10\MongoDb\OnlineMedicineShopping.DataLayer\obj\Debug\netcoreapp2.2\OnlineMedicineShopping.DataLayer.csproj.CopyComplete

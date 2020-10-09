@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineMedicineShopping.BusinessLayer\OnlineMedicineShopping.BusinessLayer.csproj" />
+    <ProjectReference Include="..\OnlineMedicineShopping.DataLayer\OnlineMedicineShopping.DataLayer.csproj" />
+    <ProjectReference Include="..\OnlineMedicineShopping.Entities\OnlineMedicineShopping.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
