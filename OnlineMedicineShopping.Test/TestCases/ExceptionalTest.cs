@@ -131,5 +131,93 @@ namespace OnlineMedicineShopping.Test.TestCases
             await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_InvlidUserRegister=" + res + "\n");
             return res;
         }
+        /// <summary>
+        /// This Method is used for test appointment is valid or not
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> Testfor_Validate_InvlidDoctorAppointment()
+        {
+            //Arrange
+            bool res = false;
+            _appointment = null;
+            //Act
+            medicineservice.Setup(repo => repo.DoctorAppointment(_appointment)).ReturnsAsync(_appointment = null);
+            var result = await _medicineServices.DoctorAppointment(_appointment);
+            if (result == null)
+            {
+                res = true;
+            }
+            //Asert
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_InvlidDoctorAppointment=" + res + "\n");
+            return res;
+        }
+        /// <summary>
+        /// This Method is used for test Add new doctor is valid or not
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> Testfor_Validate_Invlid_AddnewDoctor()
+        {
+            //Arrange
+            bool res = false;
+            _doctor = null;
+            //Act
+            adminservice.Setup(repo => repo.AddnewDoctor(_doctor)).ReturnsAsync(_doctor = null);
+            var result = await _adminMServices.AddnewDoctor(_doctor);
+            if (result == null)
+            {
+                res = true;
+            }
+            //Asert
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_Invlid_AddnewDoctor=" + res + "\n");
+            return res;
+        }
+        /// <summary>
+        /// This Method is used for test Add new Medicine is valid or not
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> Testfor_Validate_Invlid_NewMedicine()
+        {
+            //Arrange
+            bool res = false;
+            _doctor = null;
+            //Act
+            adminservice.Setup(repo => repo.NewMedicine(_medicine)).ReturnsAsync(_medicine = null);
+            var result = await _adminMServices.NewMedicine(_medicine);
+            if (result == null)
+            {
+                res = true;
+            }
+            //Asert
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_Invlid_NewMedicine=" + res + "\n");
+            return res;
+        }
+        /// <summary>
+        /// This Method is used for test Add new Category is valid or not
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> Testfor_Validate_Invlid_NewCategory()
+        {
+            //Arrange
+            bool res = false;
+            _category = null;
+            //Act
+            adminservice.Setup(repo => repo.NewCategory(_category)).ReturnsAsync(_category = null);
+            var result = await _adminMServices.NewCategory(_category);
+            if (result == null)
+            {
+                res = true;
+            }
+            //Asert
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_Invlid_NewCategory=" + res + "\n");
+            return res;
+        }
     }
 }

@@ -322,6 +322,153 @@ namespace OnlineMedicineShopping.Test.TestCases
             return res;
         }
         /// <summary>
+        /// Using the test method try to get a Medicine by Medicine Id, if get then Passed to true
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> Testfor_Validate_GetMedicineById()
+        {
+            //Arrange
+            bool res = false;
+            //Act
+            medicineservice.Setup(repo => repo.GetMedicineById(_medicine.MedicineId)).ReturnsAsync(_medicine);
+            var result = await _medicineServices.GetMedicineById(_medicine.MedicineId);
+            if (result != null)
+            {
+                res = true;
+            }
+            //Asert
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_Validate_GetMedicineById=" + res + "\n");
+            return res;
+        }
+        /// <summary>
+        /// Using the test method try to get a Medicine Order by Order Id, if get then Passed to true
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> Testfor_Validate_GetOrderById()
+        {
+            //Arrange
+            bool res = false;
+            //Act
+            medicineservice.Setup(repo => repo.GetOrderById(_medicineOrder.OrderId)).ReturnsAsync(_medicineOrder);
+            var result = await _medicineServices.GetOrderById(_medicineOrder.OrderId);
+            if (result != null)
+            {
+                res = true;
+            }
+            //Asert
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_Validate_GetOrderById=" + res + "\n");
+            return res;
+        }
+        /// <summary>
+        /// Using the test method try to get a Medicine Order by Order Id, if get then Passed to true
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> Testfor_Validate_GetAppointmentById()
+        {
+            //Arrange
+            bool res = false;
+            //Act
+            medicineservice.Setup(repo => repo.GetAppointmentById(_appointment.AppointmentId)).ReturnsAsync(_appointment);
+            var result = await _medicineServices.GetAppointmentById(_appointment.AppointmentId);
+            if (result != null)
+            {
+                res = true;
+            }
+            //Asert
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_Validate_GetAppointmentById=" + res + "\n");
+            return res;
+        }
+        /// <summary>
+        /// Using the test method try to get a Valid User using Email Id and Passwor for Place order, if get then Passed to true
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> Testfor_Login_Validate_GetValid_User()
+        {
+            //Arrange
+            bool res = false;
+            //Act
+            medicineservice.Setup(repo => repo.Login(_user.Email, _user.Password)).ReturnsAsync(_user);
+            var result = await _medicineServices.Login(_user.Email, _user.Password);
+            if (result == _user)
+            {
+                res = true;
+            }
+            //Asert
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_Login_Validate_GetValid_User=" + res + "\n");
+            return res;
+        }
+        /// <summary>
+        /// Using the test method try to test all Doctor is getting or not, if get then Passed to true
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> TestFor_GetAllDoctor()
+        {
+            //Arrange
+            var res = false;
+            //Action
+            medicineservice.Setup(repos => repos.GetAllDoctor());
+            var result = await _medicineServices.GetAllDoctor();
+            //Assertion
+            if (result != null)
+            {
+                res = true;
+            }
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_revised.txt", "TestFor_GetAllDoctor=" + res + "\n");
+            return res;
+        }
+        /// <summary>
+        /// Using the test method try to test all Medicine is getting or not, if get then Passed to true
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> TestFor_GetAllMedicine()
+        {
+            //Arrange
+            var res = false;
+            //Action
+            medicineservice.Setup(repos => repos.GetAllMedicine());
+            var result = await _medicineServices.GetAllMedicine();
+            //Assertion
+            if (result != null)
+            {
+                res = true;
+            }
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_revised.txt", "TestFor_GetAllMedicine=" + res + "\n");
+            return res;
+        }
+        /// <summary>
+        /// Using the test method try to get a Medicine by Name, if get then Passed to true
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> Testfor_Validate_GetMedicineByName()
+        {
+            //Arrange
+            bool res = false;
+            //Act
+            medicineservice.Setup(repo => repo.MedicineByName(_medicine.Name));
+            var result = await _medicineServices.MedicineByName(_medicine.Name);
+            if (result != null)
+            {
+                res = true;
+            }
+            //Asert
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_Validate_GetMedicineByName=" + res + "\n");
+            return res;
+        }
+        /// <summary>
         /// Using the test method try to update existing Medicine by Medicine Id and Medicine Collection
         /// if get updated then Passed to true.
         /// </summary>

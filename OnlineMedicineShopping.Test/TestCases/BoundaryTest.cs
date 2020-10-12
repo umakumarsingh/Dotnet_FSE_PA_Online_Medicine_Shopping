@@ -131,5 +131,115 @@ namespace OnlineMedicineShopping.Test.TestCases
             await File.AppendAllTextAsync("../../../../output_boundary_revised.txt", "Testfor_ValidateUserId=" + res + "\n");
             return res;
         }
+        /// <summary>
+        /// Testfor_ValidateOrderId is used to test Place order is valid or not
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> Testfor_ValidateOrderId()
+        {
+            //Arrange
+            bool res = false;
+            //Act
+            medicineservice.Setup(repo => repo.PlaceOrder(_medicine.MedicineId, _user.UserId)).ReturnsAsync(true);
+            var result = await _medicineServices.PlaceOrder(_medicine.MedicineId, _user.UserId);
+
+            if (result == true)
+            {
+                res = true;
+            }
+            //Asert
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_boundary_revised.txt", "Testfor_ValidateOrderId=" + res + "\n");
+            return res;
+        }
+        /// <summary>
+        /// Testfor_ValidateAppointmentId is used to test Take Appointment by user is valid or not
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> Testfor_Validate_Valid_DoctorAppointmentId()
+        {
+            //Arrange
+            bool res = false;
+            //Act
+            medicineservice.Setup(repo => repo.DoctorAppointment(_appointment)).ReturnsAsync(_appointment);
+            var result = await _medicineServices.DoctorAppointment(_appointment);
+
+            if (result.AppointmentId.Length.ToString() == _appointment.AppointmentId.Length.ToString())
+            {
+                res = true;
+            }
+            //Asert
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_boundary_revised.txt", "Testfor_Validate_Valid_DoctorAppointmentId=" + res + "\n");
+            return res;
+        }
+        /// <summary>
+        /// Testfor_ValidateDoctorId is used to test Take Add new doctor is valid or not
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> Testfor_Validate_Valid_DoctorId()
+        {
+            //Arrange
+            bool res = false;
+            //Act
+            adminservice.Setup(repo => repo.AddnewDoctor(_doctor)).ReturnsAsync(_doctor);
+            var result = await _adminMServices.AddnewDoctor(_doctor);
+
+            if (result.DoctorId.Length.ToString() == _doctor.DoctorId.Length.ToString())
+            {
+                res = true;
+            }
+            //Asert
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_boundary_revised.txt", "Testfor_Validate_Valid_DoctorId=" + res + "\n");
+            return res;
+        }
+        /// <summary>
+        /// Testfor_Validate MedicineId is used to test Add new Medicine is valid or not
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> Testfor_Validate_Valid_NewMedicineId()
+        {
+            //Arrange
+            bool res = false;
+            //Act
+            adminservice.Setup(repo => repo.NewMedicine(_medicine)).ReturnsAsync(_medicine);
+            var result = await _adminMServices.NewMedicine(_medicine);
+
+            if (result.MedicineId.Length.ToString() == _medicine.MedicineId.Length.ToString())
+            {
+                res = true;
+            }
+            //Asert
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_boundary_revised.txt", "Testfor_Validate_Valid_NewMedicineId=" + res + "\n");
+            return res;
+        }
+        /// <summary>
+        /// Testfor_Validate CategoryId is used to test Add new Category is valid or not
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task<bool> Testfor_Validate_Valid_NewCategoryId()
+        {
+            //Arrange
+            bool res = false;
+            //Act
+            adminservice.Setup(repo => repo.NewCategory(_category)).ReturnsAsync(_category);
+            var result = await _adminMServices.NewCategory(_category);
+
+            if (result.Id.Length.ToString() == _category.Id.Length.ToString())
+            {
+                res = true;
+            }
+            //Asert
+            //final result displaying in text file
+            await File.AppendAllTextAsync("../../../../output_boundary_revised.txt", "Testfor_Validate_Valid_NewCategoryId=" + res + "\n");
+            return res;
+        }
     }
 }
