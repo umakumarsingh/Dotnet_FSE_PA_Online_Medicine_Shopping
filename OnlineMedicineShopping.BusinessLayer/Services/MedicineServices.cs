@@ -10,86 +10,140 @@ namespace OnlineMedicineShopping.BusinessLayer.Services
 {
     public class MedicineServices : IMedicineServices
     {
+        /// <summary>
+        /// Creating referance variable of IMedicineRepository and injecting in Constructor
+        /// </summary>
         private readonly IMedicineRepository _medicineRepository;
 
         public MedicineServices(IMedicineRepository medicineRepository)
         {
             _medicineRepository = medicineRepository;
         }
+        /// <summary>
+        /// Get category list from Collection
+        /// </summary>
+        /// <returns></returns>
         public IList<Category> CategoryList()
         {
-            var catlist = _medicineRepository.CategoryList();
-            return catlist;
+            //Do code here
+            throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// Get list of doctor from Collection
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<Doctor> Doctor()
         {
-            var doctor = _medicineRepository.Doctor();
-            return doctor;
+            //Do code here
+            throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// Take a new Appointment and add details in MongoDb Collection
+        /// </summary>
+        /// <param name="appointment"></param>
+        /// <returns></returns>
         public Task<Appointment> DoctorAppointment(Appointment appointment)
         {
-            var appoint = _medicineRepository.DoctorAppointment(appointment);
-            return appoint;
+            //Do code here
+            throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// Get all doctor from mongoDb Collection
+        /// </summary>
+        /// <returns></returns>
         public Task<IEnumerable<Doctor>> GetAllDoctor()
         {
-            var alldoctor = _medicineRepository.GetAllDoctor();
-            return alldoctor;
+            //Do code here
+            throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// Get all medicine from MongoDb Collection
+        /// </summary>
+        /// <returns></returns>
         public Task<IEnumerable<Medicine>> GetAllMedicine()
         {
-            var medicine = _medicineRepository.GetAllMedicine();
-            return medicine;
+            //Do code here
+            throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// Get an appointment by Id
+        /// </summary>
+        /// <param name="appointmentId"></param>
+        /// <returns></returns>
         public Task<Appointment> GetAppointmentById(string appointmentId)
         {
-            var appoint = _medicineRepository.GetAppointmentById(appointmentId);
-            return appoint;
+            //Do code here
+            throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// Get Medicne by Medicine Id
+        /// </summary>
+        /// <param name="medicineId"></param>
+        /// <returns></returns>
         public Task<Medicine> GetMedicineById(string medicineId)
         {
-            var medicine = _medicineRepository.GetMedicineById(medicineId);
-            return medicine;
+            //Do code here
+            throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// Get Order by OrderId
+        /// </summary>
+        /// <param name="OrderId"></param>
+        /// <returns></returns>
         public Task<MedicineOrder> GetOrderById(string OrderId)
         {
-            var order = _medicineRepository.GetOrderById(OrderId);
-            return order;
+            //Do code here
+            throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// Login Existring User to place order
+        /// </summary>
+        /// <param name="Email"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         public Task<ApplicationUser> Login(string Email, string password)
         {
-            var user = _medicineRepository.Login(Email, password);
-            return user;
+            //Do code here
+            throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// Log out user
+        /// </summary>
+        /// <returns></returns>
         public Task<bool> Logout()
         {
             throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// Get medicine by Name
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public Task<IEnumerable<Medicine>> MedicineByName(string name)
         {
-            var medicine = _medicineRepository.MedicineByName(name);
-            return medicine;
+            //Do code here
+            throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// Place order and verify user and save oder detail in Db
+        /// </summary>
+        /// <param name="medicineId"></param>
+        /// <param name="UserId"></param>
+        /// <returns></returns>
         public Task<bool> PlaceOrder(string medicineId, string UserId)
         {
-            var order = _medicineRepository.PlaceOrder(medicineId, UserId);
-            return order;
+            //Do code here
+            throw new NotImplementedException();
         }
+        /// <summary>
+        /// Register new User
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public async Task<ApplicationUser> RegisterUser(ApplicationUser user)
         {
-            var newUser = await _medicineRepository.RegisterUser(user);
-            return newUser;
+            //Do code here
+            throw new NotImplementedException();
         }
     }
 }

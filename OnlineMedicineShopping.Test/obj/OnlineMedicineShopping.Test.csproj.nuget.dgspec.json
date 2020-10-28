@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Test\\OnlineMedicineShopping.Test.csproj": {}
+    "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Test\\OnlineMedicineShopping.Test.csproj": {}
   },
   "projects": {
-    "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.BusinessLayer\\OnlineMedicineShopping.BusinessLayer.csproj": {
+    "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.BusinessLayer\\OnlineMedicineShopping.BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.BusinessLayer\\OnlineMedicineShopping.BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.BusinessLayer\\OnlineMedicineShopping.BusinessLayer.csproj",
         "projectName": "OnlineMedicineShopping.BusinessLayer",
-        "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.BusinessLayer\\OnlineMedicineShopping.BusinessLayer.csproj",
+        "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.BusinessLayer\\OnlineMedicineShopping.BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\KUMARUMA\\.nuget\\packages\\",
-        "outputPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.BusinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,11 +30,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj": {
-                "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj"
+              "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj": {
+                "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj"
               },
-              "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj": {
-                "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj"
+              "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj": {
+                "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj": {
+    "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj",
         "projectName": "OnlineMedicineShopping.DataLayer",
-        "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj",
+        "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj",
         "packagesPath": "C:\\Users\\KUMARUMA\\.nuget\\packages\\",
-        "outputPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.DataLayer\\obj\\",
+        "outputPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -95,8 +95,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj": {
-                "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj"
+              "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj": {
+                "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj"
               }
             }
           }
@@ -139,14 +139,14 @@
         }
       }
     },
-    "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj": {
+    "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj",
         "projectName": "OnlineMedicineShopping.Entities",
-        "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj",
+        "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj",
         "packagesPath": "C:\\Users\\KUMARUMA\\.nuget\\packages\\",
-        "outputPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\obj\\",
+        "outputPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -201,14 +201,14 @@
         }
       }
     },
-    "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Test\\OnlineMedicineShopping.Test.csproj": {
+    "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Test\\OnlineMedicineShopping.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Test\\OnlineMedicineShopping.Test.csproj",
+        "projectUniqueName": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Test\\OnlineMedicineShopping.Test.csproj",
         "projectName": "OnlineMedicineShopping.Test",
-        "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Test\\OnlineMedicineShopping.Test.csproj",
+        "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Test\\OnlineMedicineShopping.Test.csproj",
         "packagesPath": "C:\\Users\\KUMARUMA\\.nuget\\packages\\",
-        "outputPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Test\\obj\\",
+        "outputPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -227,17 +227,17 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.BusinessLayer\\OnlineMedicineShopping.BusinessLayer.csproj": {
-                "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.BusinessLayer\\OnlineMedicineShopping.BusinessLayer.csproj"
+              "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.BusinessLayer\\OnlineMedicineShopping.BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.BusinessLayer\\OnlineMedicineShopping.BusinessLayer.csproj"
               },
-              "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj": {
-                "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj"
+              "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj": {
+                "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj"
               },
-              "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj": {
-                "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj"
+              "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj": {
+                "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj"
               },
-              "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping\\OnlineMedicineShopping.csproj": {
-                "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping\\OnlineMedicineShopping.csproj"
+              "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping\\OnlineMedicineShopping.csproj": {
+                "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping\\OnlineMedicineShopping.csproj"
               }
             }
           }
@@ -292,14 +292,14 @@
         }
       }
     },
-    "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping\\OnlineMedicineShopping.csproj": {
+    "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping\\OnlineMedicineShopping.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping\\OnlineMedicineShopping.csproj",
+        "projectUniqueName": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping\\OnlineMedicineShopping.csproj",
         "projectName": "OnlineMedicineShopping",
-        "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping\\OnlineMedicineShopping.csproj",
+        "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping\\OnlineMedicineShopping.csproj",
         "packagesPath": "C:\\Users\\KUMARUMA\\.nuget\\packages\\",
-        "outputPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping\\obj\\",
+        "outputPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -318,14 +318,14 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.BusinessLayer\\OnlineMedicineShopping.BusinessLayer.csproj": {
-                "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.BusinessLayer\\OnlineMedicineShopping.BusinessLayer.csproj"
+              "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.BusinessLayer\\OnlineMedicineShopping.BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.BusinessLayer\\OnlineMedicineShopping.BusinessLayer.csproj"
               },
-              "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj": {
-                "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj"
+              "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj": {
+                "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.DataLayer\\OnlineMedicineShopping.DataLayer.csproj"
               },
-              "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj": {
-                "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj"
+              "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj": {
+                "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj"
               }
             }
           }

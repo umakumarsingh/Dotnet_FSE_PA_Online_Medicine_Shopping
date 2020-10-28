@@ -14,6 +14,9 @@ namespace OnlineMedicineShopping.Controllers
     [ApiController]
     public class AdminController : ControllerBase
     {
+        /// <summary>
+        /// Creating referance variable of IAdminMedicineServices interface and injecting in AdminController constructor
+        /// </summary>
         private readonly IAdminMedicineServices _AMServices;
         private readonly IMedicineServices _MServices;
         public AdminController(IAdminMedicineServices adminMedicineServices, IMedicineServices MServices)
@@ -28,7 +31,8 @@ namespace OnlineMedicineShopping.Controllers
         [HttpGet]
         public async Task<IEnumerable<MedicineOrder>> AllOrder()
         {
-            return await _AMServices.GetAllOrder();
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get all appointment placed by user
@@ -38,7 +42,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("AllAppointment")]
         public async Task<IEnumerable<Appointment>> AllAppointment()
         {
-            return await _AMServices.GetAllAppointment();
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Add new doctor for appointment
@@ -49,19 +54,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("AddDoctor")]
         public async Task<IActionResult> AddNewDoctor([FromBody] DoctorViewModel model)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            Doctor newdoctor = new Doctor
-            {
-                Name = model.Name,
-                Specialization = model.Specialization,
-                Qualification = model.Qualification,
-                PracticingFrom = model.PracticingFrom
-            };
-            await _AMServices.AddnewDoctor(newdoctor);
-            return Ok("New Doctor Addeed...");
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Update existing Docctor using doctor Id
@@ -73,17 +67,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("Updatedoctor/{string doctorId}")]
         public async Task<IActionResult> Updatedoctor(string doctorId, [FromBody] Doctor doctor)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-            }
-            var getdoctor = _AMServices.GetDoctorById(doctorId);
-            if (getdoctor == null)
-            {
-                return NotFound();
-            }
-            await _AMServices.UpdateDoctor(doctorId, doctor);
-            return Ok("Doctor Updated...");
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Remove doctor by doctor Id
@@ -94,23 +79,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("Removedoctor/{DoctorId}")]
         public async Task<IActionResult> RemoveDoctor(string DoctorId)
         {
-            if (DoctorId == null)
-            {
-                return BadRequest();
-            }
-            try
-            {
-                var result = await _AMServices.DeleteDoctor(DoctorId);
-                if (result == false)
-                {
-                    return NotFound();
-                }
-                return Ok("Doctor Deleted");
-            }
-            catch (Exception)
-            {
-                return BadRequest();
-            }
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Update existing user by userId
@@ -122,17 +92,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("Updateuser/{string userId}")]
         public async Task<IActionResult> Updateuser(string userId, [FromBody] ApplicationUser user)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-            }
-            var getuser = _AMServices.GetUserById(userId);
-            if (getuser == null)
-            {
-                return NotFound();
-            }
-            await _AMServices.UpdateUser(userId, user);
-            return Ok("User Updated...");
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Add new Mdicne to Db Collection
@@ -143,24 +104,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("AddMedicine")]
         public async Task<IActionResult> AddNewMedicine([FromBody] MedicineViewModel model)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            Medicine newMedicine = new Medicine
-            {
-                Name = model.Name,
-                Brand = model.Brand,
-                Price = model.Price,
-                Stock = model.Stock,
-                Discount = model.Discount,
-                Details = model.Details,
-                Size = model.Size,
-                Features = model.Features,
-                CatId = model.CatId
-            };
-            await _AMServices.NewMedicine(newMedicine);
-            return Ok("New Medicine Addeed...");
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Update existring medicine by Medicine Id
@@ -172,17 +117,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("Updatemedicine/{string MedicineId}")]
         public async Task<IActionResult> UpdatMedicine(string medicineId, [FromBody] Medicine medicine)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-            }
-            var getmedicine = _MServices.GetMedicineById(medicineId);
-            if (getmedicine == null)
-            {
-                return NotFound();
-            }
-            await _AMServices.UpdateMedicine(medicineId, medicine);
-            return Ok("Medicine Updated...");
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Delete Medicine by Id
@@ -193,23 +129,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("Removemedicine/{MedicineId}")]
         public async Task<IActionResult> RemoveMedicine(string MedicineId)
         {
-            if (MedicineId == null)
-            {
-                return BadRequest();
-            }
-            try
-            {
-                var result = await _AMServices.DeleteDoctor(MedicineId);
-                if (result == false)
-                {
-                    return NotFound();
-                }
-                return Ok("Medicine Deleted");
-            }
-            catch (Exception)
-            {
-                return BadRequest();
-            }
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Add new Category to Db Collection
@@ -220,19 +141,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("AddCategory")]
         public async Task<IActionResult> AddNewCategory([FromBody] CategoryViewModel model)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            Category newcategory = new Category
-            {
-                CatId = model.CatId,
-                Title = model.Title,
-                Url = model.Url,
-                OpenInNewWindow = model.OpenInNewWindow
-            };
-            await _AMServices.NewCategory(newcategory);
-            return Ok("New Category Addeed...");
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Remove Appintment by Id
@@ -243,23 +153,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("Removecategory/{Id}")]
         public async Task<IActionResult> RemoveCategory(string Id)
         {
-            if (Id == null)
-            {
-                return BadRequest();
-            }
-            try
-            {
-                var result = await _AMServices.DeleteCategory(Id);
-                if (result == false)
-                {
-                    return NotFound();
-                }
-                return Ok("Category Deleted");
-            }
-            catch (Exception)
-            {
-                return BadRequest();
-            }
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Update Existing appointment by Id
@@ -271,17 +166,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("Updateappointment/{string AppointmentId}")]
         public async Task<IActionResult> UpdatAppointment(string AppointmentId, [FromBody] Appointment appointment)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-            }
-            var getappoint = _MServices.GetAppointmentById(AppointmentId);
-            if (getappoint == null)
-            {
-                return NotFound();
-            }
-            await _AMServices.UpdateAppointment(AppointmentId, appointment);
-            return Ok("Appointment Updated...");
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Remove Appointment by Id from Db Collection
@@ -292,23 +178,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("RemoveAppointment/{AppointmentId}")]
         public async Task<IActionResult> RemoveAppointment(string appointmentId)
         {
-            if (appointmentId == null)
-            {
-                return BadRequest();
-            }
-            try
-            {
-                var result = await _AMServices.DeleteAppointment(appointmentId);
-                if (result == false)
-                {
-                    return NotFound();
-                }
-                return Ok("Appointment Deleted");
-            }
-            catch (Exception)
-            {
-                return BadRequest();
-            }
+            //Do code here
+            throw new NotImplementedException();
         }
     }
 }

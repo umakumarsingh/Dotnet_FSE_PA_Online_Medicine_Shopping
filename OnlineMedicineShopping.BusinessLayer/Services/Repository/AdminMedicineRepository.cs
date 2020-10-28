@@ -30,7 +30,11 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
             _dbDCollection = _mongoContext.GetCollection<Doctor>(typeof(Doctor).Name);
             _dbACollection = _mongoContext.GetCollection<Appointment>(typeof(Appointment).Name);
         }
-
+        /// <summary>
+        /// Add new doctor in MongoDb Collection
+        /// </summary>
+        /// <param name="doctor"></param>
+        /// <returns></returns>
         public async Task<Doctor> AddnewDoctor(Doctor doctor)
         {
             try
@@ -48,7 +52,11 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
             }
             return doctor;
         }
-
+        /// <summary>
+        /// Delete a Appointment by Appointment Id
+        /// </summary>
+        /// <param name="appointmentId"></param>
+        /// <returns></returns>
         public async Task<bool> DeleteAppointment(string appointmentId)
         {
             try
@@ -63,7 +71,11 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 throw (ex);
             }
         }
-
+        /// <summary>
+        /// Delete a category by categeory Id
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
         public async Task<bool> DeleteCategory(string Id)
         {
             try
@@ -78,7 +90,11 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 throw (ex);
             }
         }
-
+        /// <summary>
+        /// Delete category Category Id
+        /// </summary>
+        /// <param name="doctorId"></param>
+        /// <returns></returns>
         public async Task<bool> DeleteDoctor(string doctorId)
         {
             try
@@ -93,7 +109,11 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 throw (ex);
             }
         }
-
+        /// <summary>
+        /// Delete medicine by Id
+        /// </summary>
+        /// <param name="medicineId"></param>
+        /// <returns></returns>
         public async Task<bool> DeleteMedicine(string medicineId)
         {
             try
@@ -108,7 +128,10 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 throw (ex);
             }
         }
-
+        /// <summary>
+        /// Get all appointment
+        /// </summary>
+        /// <returns></returns>
         public async Task<IEnumerable<Appointment>> GetAllAppointment()
         {
             try
@@ -123,7 +146,10 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 throw (ex);
             }
         }
-
+        /// <summary>
+        /// Get all doctor
+        /// </summary>
+        /// <returns></returns>
         public async Task<IEnumerable<MedicineOrder>> GetAllOrder()
         {
             try
@@ -138,7 +164,11 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 throw (ex);
             }
         }
-
+        /// <summary>
+        /// Get doctor by DoctorId
+        /// </summary>
+        /// <param name="DoctorId"></param>
+        /// <returns></returns>
         public async Task<Doctor> GetDoctorById(string DoctorId)
         {
             try
@@ -153,7 +183,11 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 throw (ex);
             }
         }
-
+        /// <summary>
+        /// Get user By useId
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         public async Task<ApplicationUser> GetUserById(string userId)
         {
             try
@@ -168,7 +202,11 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 throw (ex);
             }
         }
-
+        /// <summary>
+        /// Add new Category
+        /// </summary>
+        /// <param name="category"></param>
+        /// <returns></returns>
         public async Task<Category> NewCategory(Category category)
         {
             try
@@ -186,7 +224,11 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
             }
             return category;
         }
-
+        /// <summary>
+        /// Add new Medicine
+        /// </summary>
+        /// <param name="medicine"></param>
+        /// <returns></returns>
         public async Task<Medicine> NewMedicine(Medicine medicine)
         {
             try
@@ -204,6 +246,12 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
             }
             return medicine;
         }
+        /// <summary>
+        /// Update an existing appointment
+        /// </summary>
+        /// <param name="appointmentId"></param>
+        /// <param name="appointment"></param>
+        /// <returns></returns>
         public async Task<Appointment> UpdateAppointment(string appointmentId, Appointment appointment)
         {
             if (appointment == null && appointmentId == null)
@@ -216,7 +264,12 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 .Set("Symtoms", appointment.Symtoms).Set("Remark", appointment.Remark).Set("PatientAge", appointment.PatientAge));
             return update;
         }
-
+        /// <summary>
+        /// Update an existing appointment
+        /// </summary>
+        /// <param name="doctorId"></param>
+        /// <param name="doctor"></param>
+        /// <returns></returns>
         public async Task<Doctor> UpdateDoctor(string doctorId, Doctor doctor)
         {
             if (doctor == null && doctorId == null)
@@ -229,7 +282,12 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 .Set("PracticingFrom", doctor.PracticingFrom));
             return update;
         }
-
+        /// <summary>
+        /// Update an existing medicine
+        /// </summary>
+        /// <param name="medicineId"></param>
+        /// <param name="medicine"></param>
+        /// <returns></returns>
         public async Task<Medicine> UpdateMedicine(string medicineId, Medicine medicine)
         {
             if (medicine == null && medicineId == null)
@@ -243,7 +301,12 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 .Set("Size", medicine.Size).Set("Features", medicine.Features));
             return update;
         }
-
+        /// <summary>
+        /// Update an existing user
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public async Task<ApplicationUser> UpdateUser(string userId, ApplicationUser user)
         {
             if (user == null && userId == null)

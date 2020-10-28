@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cAOI5NjiB++ovu5pMxQd8cPvggkwM0nqn5t97qecUGeG2zU7RaAZIE6rKIMplF9iileJdpCL5oHUinAUwLtkJw==",
+  "dgSpecHash": "qUErP5EQYTxnxi2dHXd43yf8tEvpxFTS/otQ+QD6oLz6wjI0GV9bK4cm73M7GcpS5xHnibifR/b1C+suZrzMPw==",
   "success": true,
-  "projectFilePath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj",
+  "projectFilePath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KUMARUMA\\.nuget\\packages\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",
     "C:\\Users\\KUMARUMA\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.2.0\\microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",

@@ -31,6 +31,10 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
             _dbDCollection = _mongoContext.GetCollection<Doctor>(typeof(Doctor).Name);
             _dbACollection = _mongoContext.GetCollection<Appointment>(typeof(Appointment).Name);
         }
+        /// <summary>
+        /// get list of all categories
+        /// </summary>
+        /// <returns></returns>
         public IList<Category> CategoryList()
         {
             try
@@ -45,7 +49,10 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 throw (ex);
             }
         }
-
+        /// <summary>
+        /// Get Doctor All doctor by Name Descending
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<Doctor> Doctor()
         {
             try
@@ -60,7 +67,11 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 throw (ex);
             }
         }
-
+        /// <summary>
+        /// Book Doctor Appointment
+        /// </summary>
+        /// <param name="appointment"></param>
+        /// <returns></returns>
         public async Task<Appointment> DoctorAppointment(Appointment appointment)
         {
             try
@@ -78,7 +89,10 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
             }
             return appointment;
         }
-
+        /// <summary>
+        /// Get all doctore
+        /// </summary>
+        /// <returns></returns>
         public async Task<IEnumerable<Doctor>> GetAllDoctor()
         {
             try
@@ -93,7 +107,10 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 throw (ex);
             }
         }
-
+        /// <summary>
+        /// get all medicine
+        /// </summary>
+        /// <returns></returns>
         public async Task<IEnumerable<Medicine>> GetAllMedicine()
         {
             try
@@ -108,7 +125,11 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 throw (ex);
             }
         }
-
+        /// <summary>
+        /// Get appointment by Id
+        /// </summary>
+        /// <param name="appointmentId"></param>
+        /// <returns></returns>
         public async Task<Appointment> GetAppointmentById(string appointmentId)
         {
             try
@@ -123,7 +144,11 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 throw (ex);
             }
         }
-
+        /// <summary>
+        /// Get medicine by MedicineById
+        /// </summary>
+        /// <param name="medicineId"></param>
+        /// <returns></returns>
         public async Task<Medicine> GetMedicineById(string medicineId)
         {
             try
@@ -138,7 +163,11 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 throw (ex);
             }
         }
-
+        /// <summary>
+        /// Get Medicine by Name
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public async Task<IEnumerable<Medicine>> MedicineByName(string name)
         {
             try
@@ -170,7 +199,12 @@ namespace OnlineMedicineShopping.BusinessLayer.Services.Repository
                 throw (ex);
             }
         }
-
+        /// <summary>
+        /// Place Order by user 
+        /// </summary>
+        /// <param name="medicineId"></param>
+        /// <param name="UserId"></param>
+        /// <returns></returns>
         public async Task<bool> PlaceOrder(string medicineId, string UserId)
         {
             try

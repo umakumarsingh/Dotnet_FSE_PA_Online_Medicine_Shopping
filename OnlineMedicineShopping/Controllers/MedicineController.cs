@@ -29,7 +29,8 @@ namespace OnlineMedicineShopping.Controllers
         [HttpGet]
         public async Task<IEnumerable<Medicine>> AllMedicine()
         {
-            return await _medicineServices.GetAllMedicine();
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get Medicine by Id and show medicine details
@@ -40,16 +41,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("MedicineById/{MedicineId}")]
         public async Task<IActionResult> MedicineById(string medicineId)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-            }
-            var getmedicine = await _medicineServices.GetMedicineById(medicineId);
-            if (getmedicine == null)
-            {
-                return NotFound();
-            }
-            return CreatedAtAction("AllMedicine", new { OrderId = getmedicine.MedicineId }, getmedicine);
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get or find medicine by Medicine Name
@@ -60,7 +53,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("MedicineByName/{Name}")]
         public async Task<IEnumerable<Medicine>> MedicineByName(string name)
         {
-            return await _medicineServices.MedicineByName(name);
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Place order for Registred user
@@ -73,16 +67,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("Placeorder/{MedicineId}/{email}/{password}")]
         public async Task<IActionResult> Placeorder(string medicineId, string email, string password)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-            }
-            var result = await _medicineServices.Login(email, password);
-            if (result != null)
-            {
-                await _medicineServices.PlaceOrder(medicineId, result.UserId);
-            }
-            return Ok("Order Placed...");
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get Order for user by Order Id
@@ -93,16 +79,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("OrderById/{OrderId}")]
         public async Task<IActionResult> OrderById(string OrderId)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-            }
-            var getorder = await _medicineServices.GetOrderById(OrderId);
-            if (getorder == null)
-            {
-                return NotFound();
-            }
-            return CreatedAtAction("AllOrder", new { OrderId = getorder.OrderId }, getorder);
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Add/Register new user to portal
@@ -113,24 +91,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("Register")]
         public async Task<IActionResult> AddNewUser([FromBody] UserViewModel model)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            ApplicationUser newuser = new ApplicationUser
-            {
-                Name = model.Name,
-                Email = model.Email,
-                Password = model.Password,
-                MobileNumber = model.MobileNumber,
-                PinCode = model.PinCode,
-                HouseNo_Building_Name = model.HouseNo_Building_Name,
-                Road_area = model.Road_area,
-                City = model.City,
-                State = model.State
-            };
-            await _medicineServices.RegisterUser(newuser);
-            return Ok("User Addeed...");
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Book a doctor appointment for F2F Appointment
@@ -141,21 +103,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("Appointment")]
         public async Task<IActionResult> BookAppointment([FromBody] AppointmentViewModel model)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            Appointment newuser = new Appointment
-            {
-                PatientName = model.PatientName,
-                DoctorName = model.DoctorName,
-                Takendate = model.Takendate,
-                Symtoms = model.Symtoms,
-                Remark = model.Remark,
-                PatientAge = model.PatientAge
-            };
-            await _medicineServices.DoctorAppointment(newuser);
-            return Ok("Appointment Addeed...");
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get Appointment by id and show to user
@@ -166,16 +115,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("AppointmentById/{AppointmentId}")]
         public async Task<IActionResult> AppointmentById(string AppointmentId)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-            }
-            var getappointment = await _medicineServices.GetAppointmentById(AppointmentId);
-            if (getappointment == null)
-            {
-                return NotFound();
-            }
-            return CreatedAtAction("AllMedicine", new { AppointmentId = getappointment.AppointmentId }, getappointment);
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get List of All doctor
@@ -185,7 +126,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("DoctorList")]
         public async Task<IEnumerable<Doctor>> AllDoctor()
         {
-            return await _medicineServices.GetAllDoctor();
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get list of Medicine category
@@ -195,16 +137,8 @@ namespace OnlineMedicineShopping.Controllers
         [Route("Categorylist")]
         public IActionResult GetCategoryList()
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-            }
-            var getcategory = _medicineServices.CategoryList();
-            if (getcategory == null)
-            {
-                return NotFound();
-            }
-            return CreatedAtAction("AllMedicine", getcategory);
+            //Do code here
+            throw new NotImplementedException();
         }
     }
 }

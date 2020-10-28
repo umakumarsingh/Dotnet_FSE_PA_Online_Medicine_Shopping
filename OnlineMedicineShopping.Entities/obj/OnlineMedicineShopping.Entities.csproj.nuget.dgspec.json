@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj": {}
+    "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj": {}
   },
   "projects": {
-    "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj": {
+    "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj",
         "projectName": "OnlineMedicineShopping.Entities",
-        "projectPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj",
+        "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\OnlineMedicineShopping.Entities.csproj",
         "packagesPath": "C:\\Users\\KUMARUMA\\.nuget\\packages\\",
-        "outputPath": "D:\\IIHT\\Task-10\\MongoDb\\OnlineMedicineShopping.Entities\\obj\\",
+        "outputPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\Dotnet_FSE_PA_Online_Medicine_Shopping\\OnlineMedicineShopping.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
